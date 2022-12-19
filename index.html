@@ -99,6 +99,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     
@@ -106,10 +107,10 @@
 <div class="navbar">
 <nav>
 <ul id="menuBar">
-    <li> <a href="#">Home</a><li>
-       <li><a href="#">service</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
+    <li> <a href="index.html">Home</a><li>
+       <li><a href="service.html">service</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
      <li><button class="loginbtn"
     onclick="document.getElementById('login-form').style.display-'block'"
 style="width: auto;">login</button></li>
@@ -136,6 +137,108 @@ class="toggle-btn">login</button>
 </ul>
 
 </nav>
+<div id="schedule">
+  <table class="table">
+      <tr class="head">
+          <th rowspan="2">Train Number</th>
+          <th rowspan="2">Train Name</th>
+          <th colspan="2">Time</th>
+          <th colspan="2">station</th>
+      </tr>
+      <tr class="sub-head">
+          <th>Arrival</th>
+          <th>Departure</th>
+          <th>Start Point</th>
+          <th>Endpoint</th>
+      </tr>
+  </table>
+</div> 
+<div card="hello">
     
+  <div class="container w-25" id="ticket-attributes">
+      <div class="row">
+          <div class="col">
+              <h3>Ticket Order</h3>
+              <form id="ticket-form">
+                  <div class="form-floating mb-3">
+                      <select class="form-select" aria-label="Default Select Example" id="trainNumber">
+                          <option selected>Train Number</option>
+                          <option value="12235"> 12235 </option>
+                          <option value="12236"> 12236 </option>
+                          <option value="12301"> 12301 </option>
+                          <option value="12302"> 12302 </option>
+                          <option value="12305"> 12305 </option>
+                          <option value="12306"> 12306 </option>
+                      </select>
+                  </div>
+                  <div class="form-floating mb-3">
+                     
+                      <select class="form-select" aria-label="Default select example" id="trainName">
+                          <option selected> Train Name</option>
+                          <option value="dibrugarh-new-delhi-rajdhani-express"> Dibrugarh - New Delhi Rajdhani Express </option>
+                          <option value="new-delhi-dibrugarh-rajdhani-express"> 	New Delhi - Dibrugarh Rajdhani Express </option>
+                          <option value="howrah-new-delhi-rajdhani-express-(via Gaya)"> 	Howrah - New Delhi Rajdhani Express (via Gaya) </option>
+                          <option value="new-delhi-howrah-rajdhani-express-(Via Gaya)"> New Delhi - Howrah Rajdhani Express (Via Gaya) </option>
+                          <option value="howrah-new-relhi-rajdhani-express-(via Patna)"> Howrah - New Delhi Rajdhani Express (via Patna) </option>
+                          <option value="new-delhi-howrah-rajdhani-express-(via Patna)"> New Delhi - Howrah Rajdhani Express (via Patna) </option>
+                      </select>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <select class="form-select" aria-label="Default select example" id="departure">
+                          <option selected> Departure </option>
+                          <option value="19:25"> 19:25 </option>
+                          <option value="09:25"> 09:25 </option>
+                          <option value="16:55"> 16:55 </option>
+                          <option value="14:05"> 14:05</option>
+                      </select>
+                  </div>
+          </div>
+          <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="s-quantity" placeholder="Enter Number of tickets">
+              <label for="s-quantity"> No. of Tickets </label>
+          </div>
+          <button type="submit" class="btn btn-dark"> Submit Order </button>
+          </form>
+      </div>
+  </div>
+  </div>
+  <div class="container" id="table-order">
+      <table class="table">
+          <thead>
+              <tr>
+                  <th scope="col"> Train Number </th>
+                  <th scope="col"> Train Name </th>
+                  <th scope="col"> Departure </th>
+                  <th scope="col"> No. of Tickets </th>
+                  <th scope="col"> Price </th>
+              </tr>
+          </thead>
+          <tbody id="table-content">
+              <tr>
+                  <td id="train-number"></td>
+                  <td id="train-name"></td>
+                  <td id="train-departure-time"></td>
+                  <td id="no-of-tickets"></td>
+                  <td id="price"></td>
+              </tr>
+          </tbody>
+      </table>
+      <div>
+          <p>Enter your details in the fields below,after your order then press the "Submit form" button to submit your details.</p>
+
+          <form  action="/action_page.php">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br><br>
+          <input id="myForm" type="button" onclick="clickAlert()" value="Submit form">
+          </form>
+      </div>
+  </div>
+</div>
+</div> 
+
 </body>
+<script
+src="index.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script>
 </html>
