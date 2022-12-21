@@ -105,8 +105,3 @@ function renderTickets(ticket){
     document.querySelector('.table').appendChild(row)
 }
 
-// function initialize(){
-//     getAllTrains()
-// }
-// initialize();
-
