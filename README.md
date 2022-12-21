@@ -4,34 +4,32 @@ This project deals with giving railway day to day timetable.
 
 For one to travel he/she has to go through the railway schedule then order for tickets.
 
-# Author
 
-- Benson Wanjira
 
-# Built-with
+# Getting started
 
-->HTML
-
-->CSS
-
-->JavaScript
-
-# Getting started 
-
-clone you repository to git hub by running  
-    
 
 # procedure
 
-1. Clone this repository to your machine: git clone https://github.com/McRonaah/Kenya-commute-services.git
+1. Clone this repository to your machine:
 
-2. Change the directory into the project directory: cd Kenya-commute-services.
+        git clone 
 
-3. To open in your code editor run: code .
+2. Change the directory into the project directory: 
 
-4. To install json server run: npm i json-server
+      cd project -1.
 
-5. To get started with json server run: json-server --watch db.json
+3. To open in your code editor run: 
+
+        code .
+
+4. To install json server run: 
+
+        npm i json-server
+
+5. To get started with json server run: 
+
+        json-server --watch db.json
 
 # Deliverables
 
@@ -60,34 +58,21 @@ As a user, I can:
 
 # Interactivity with the user
 
--One is able to go through the railway schedule.
+-  One is able to go through the railway schedule.
 
--One is able to order for train tickets.
+-  One is able to order for train tickets.
 
--one is able to like, comment to our services provided.
-
-# Support or Contribution
-
-For any suggestions or contributions please do not hesistate to contact the owners of this repository.
-
-Contributions to this project are welcomed by all, If you need to contribute, follow the steps below
-
--Fork the repository
-
--Follow the procedure as explained earlier.
-
--Create a branch off develop for the feature you wish to add
-
--Make neccessary changes, commit and raise a pull request against develop,
-
--Note when making contributions, please endevour to follow good coding practice.
+-   one is able to like, comment to our services provided.
 
 
-# Contacts.
-Below you will find our contact information:
+# Author
 
-Call / Message; +254702233145
+- Benson Wanjira
 
-E-mail; ronaldcheruiyot342@gmail.com
+# Built-with
 
-Fax; +1(001122698791) 
+->HTML
+
+->CSS
+
+->JavaScript
