@@ -8,7 +8,6 @@ For one to travel he/she has to go through the railway schedule then order for t
 
 # Getting started
 
-
 # procedure
 
 1. Clone this repository to your machine:
@@ -30,6 +29,10 @@ For one to travel he/she has to go through the railway schedule then order for t
 5. To get started with json server run: 
 
         json-server --watch db.json
+
+6. To view the app use the link provided below
+
+      https://amazing-cat-cd69fa.netlify.app/
 
 # Deliverables
 
@@ -69,6 +72,8 @@ As a user, I can:
 
 - Benson Wanjira
 
+# License
+-Was License by ISC
 # Built-with
 
 ->HTML
